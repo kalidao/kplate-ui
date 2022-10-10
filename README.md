@@ -1,6 +1,6 @@
 # K-Plate for UIs
 
-This is a [Next.js](https://nextjs.org/) project with `ethers` + `wagmi` + 'rainbow-kit`. 
+This is a [Next.js](https://nextjs.org/) project with `ethers` + `wagmi` + `rainbow-kit`. 
 
 It is also installed with `kali-hooks` and `reality`.
 
