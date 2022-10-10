@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
-        <ThemeProvider>
+        <ThemeProvider defaultMode="light">
           <Component {...pageProps} />
         </ThemeProvider>
       </RainbowKitProvider>

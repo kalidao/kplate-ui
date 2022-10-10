@@ -1,7 +1,7 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Heading, Text, Stack, Box } from '@kalidao/reality'
+import { Heading, Text, Stack, Box, Button } from '@kalidao/reality'
 
 const Home: NextPage = () => {
   return (
@@ -19,10 +19,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack as="main" space={'2'}>
-        <Heading as="h1" align="center" color="black">
+        <Heading as="h1" align="center">
           Welcome to K-Plate!
         </Heading>
-        <Text color="black" align="center">
+        <Text align="center">
           Get started by editing{' '}
           <Text color="accent" as="code" font="mono">
             pages/index.tsx
