@@ -6,6 +6,7 @@ import { infuraProvider } from 'wagmi/providers/infura'
 import { publicProvider } from 'wagmi/providers/public'
 import { ThemeProvider } from '@kalidao/reality'
 import '@kalidao/reality/styles'
+import { getRainbowTheme } from '~/utils/getRainbowTheme'
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
@@ -24,9 +25,11 @@ const wagmiClient = createClient({
 })
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const rainbowTheme = getRainbowTheme('light')
+
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider chains={chains} theme={rainbowTheme}>
         <ThemeProvider defaultMode="light">
           <Component {...pageProps} />
         </ThemeProvider>
